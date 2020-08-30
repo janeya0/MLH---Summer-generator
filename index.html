@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Attraction Generator</title>
+
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alata&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="class1">
+      <center>
+        <h1>Summer Attraction Generator</h1>
+        <h2>Destination: Toronto</h2>
+      </center>
+      <p id="question">
+        How long do you want to stay there?
+      </p>
+      <br />
+      <p id="image">
+        <img class = "mainimage" src="https://cdn.glitch.com/989a4e4c-d4bd-4c9c-8e40-aeaa6afa4b35%2Fhourglass.png?v=1598730493131"
+        />
+      </p>
+      <div class="side-buttons">
+        <button class="button" onclick="storeAnsw(this.id)" id="1">
+          Less than 2 hours
+        </button>
+        <br />
+        <button class="button" onclick="storeAnsw(this.id)" id="2">
+          2-4 hours
+        </button>
+        <br />
+        <button class="button" onclick="storeAnsw(this.id)" id="3">
+          4 hours+
+        </button>
+        <br />
+        <p class="result" id="result"></p>
+      </div><br/><br/><br/><br/><br/><br/>
+      <!-- next button -->
+      <br />
+      <center>
+        <div class="bottom-buttons">
+          <button onclick="submit()" class="button nextButton">submit</button><br/>
+          <button onclick="newQuestion()" class="button nextButton">
+            next
+          </button><br/>
+          <button onclick="location.reload()" class="nextButton">
+            restart
+          </button>
+        </div>
+      </center>
+    </div>
+  </body>
+</html>
